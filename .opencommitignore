@@ -1,1 +1,4 @@
 /dist
+/.idea
+/yarn.lock
+/node-modules
