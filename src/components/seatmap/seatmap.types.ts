@@ -1,9 +1,9 @@
 import { MouseEventHandler } from "react";
 
-export interface ButtonProps {
+export interface SeatmapTypes {
     text?: string;
     primary?: boolean;
     disabled?: boolean;
-    size?: "small" | "medium" | "large";
+    size?: "small" | "medium" | "large" | "xl";
     onClick?: MouseEventHandler<HTMLButtonElement>;
 }
