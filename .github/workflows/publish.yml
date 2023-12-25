@@ -9,6 +9,10 @@ permissions:
   contents: read
   pages: write
   id-token: write
+concurrency:
+  group: "publish"
+  cancel-in-progress: false
+
 jobs:
   release:
     runs-on: ubuntu-latest
@@ -83,7 +87,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITH_PACKAGE_TOKEN }}
         run: |
           git push origin && git push --tags
-          
+
       # Publish version to public repository
       - name: Publish
         run: yarn publish --verbose --access public --tag ${{ env.RELEASE_TAG }}
