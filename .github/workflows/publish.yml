@@ -6,7 +6,7 @@ on:
         description: 'Release type (one of): patch, minor, major, prepatch, preminor, premajor, prerelease'
         required: true
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 concurrency:
