@@ -1,7 +1,7 @@
 [![LIVE DEMO](https://raw.githubusercontent.com/seatmap/canvas/master/assets/banner_ui.png?raw=true)](https://alisaitteke.github.io/seatmap-canvas)
 
 # Seatmap Canvas - React
-This is the ReactJS implementation of the original seatmap-canvas library, an open-source tool designed for interactive seat selection in various environments like stadiums, theaters, and event venues. Leveraging the capabilities of React and d3.js, this library provides a flexible and efficient solution for managing seat arrangements.
+This is the ReactJS implementation of the original [seatmap-canvas](https://alisaitteke.github.io/seatmap-canvas/) library, an open-source tool designed for interactive seat selection in various environments like stadiums, theaters, and event venues. Leveraging the capabilities of React and d3.js, this library provides a flexible and efficient solution for managing seat arrangements.
 
 ## Features
 * React Integration: Designed specifically for React projects, offering a streamlined development experience.
