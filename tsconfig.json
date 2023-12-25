@@ -5,6 +5,8 @@
     "skipLibCheck": true,
     "jsx": "react",
     "module": "ESNext",
+    "target": "es5",
+    "baseUrl": "./src",
     "declaration": true,
     "declarationDir": "types",
     "sourceMap": true,
@@ -12,7 +14,14 @@
     "moduleResolution": "node",
     "emitDeclarationOnly": true,
     "allowSyntheticDefaultImports": true,
-    "forceConsistentCasingInFileNames": true
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitAny": false,
+    "allowUmdGlobalAccess": true,
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ]
   },
   "exclude": [
     "dist",

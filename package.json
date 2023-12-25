@@ -12,6 +12,7 @@
   "author": "Ali Sait Teke <alisaitteke@gmail.com>",
   "license": "ISC",
   "dependencies": {
+    "@alisaitteke/seatmap-canvas": "latest",
     "prop-types": "^15.8.1"
   },
   "peerDependencies": {
