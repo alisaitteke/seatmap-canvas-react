@@ -1,6 +1,6 @@
 {
   "name": "@alisaitteke/seatmap-canvas-react",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "This is the ReactJS implementation of the original seatmap-canvas library, an open-source tool designed for interactive seat selection in various environments like stadiums, theaters, and event venues. Leveraging the capabilities of React and d3.js, this library provides a flexible and efficient solution for managing seat arrangements.",
   "tags": "seating, seat, seatmap, seat-selection, seat-booking, booking, ticket, reservation",
   "scripts": {
