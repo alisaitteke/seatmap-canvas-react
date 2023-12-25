@@ -1,5 +1,25 @@
-## Installation
+[![LIVE DEMO](https://raw.githubusercontent.com/seatmap/canvas/master/assets/banner_ui.png?raw=true)](https://alisaitteke.github.io/seatmap-canvas)
 
+# Seatmap Canvas - React
+This is the ReactJS implementation of the original seatmap-canvas library, an open-source tool designed for interactive seat selection in various environments like stadiums, theaters, and event venues. Leveraging the capabilities of React and d3.js, this library provides a flexible and efficient solution for managing seat arrangements.
+
+## Features
+* React Integration: Designed specifically for React projects, offering a streamlined development experience.
+* Dynamic Seat Selection: Enables interactive selection, categorization, and location of seats.
+* Customizable Styles: Extensive styling options for seats, blocks, and labels to fit your application's design.
+* Interactive Seat Models: Define properties and behaviors for seats, including salability, notes, and custom data.
+* Block Model Configuration: Organize seats into blocks with customizable titles, colors, and labels.
+* Event Handling: Simplified event listeners for seat interactions, allowing dynamic responses to user actions.
+
+
+## Planned
+- Vue Integration: Designed specifically for Vue or Nuxt projects, offering a streamlined development experience.
+- Angular Integration: Designed specifically for Angular projects, offering a streamlined development experience.
+
+[LIVE DEMO](https://alisaitteke.github.io/seatmap-canvas/)
+
+
+## Installation
 <pre>
 npm i <a href="https://npm.pkg.github.com/alisaitteke/seatmap-canvas">@alisaitteke/seatmap-canvas-react</a> --save
 OR
@@ -44,6 +64,7 @@ const config = {
 }
 ```
 
+
 ### API
 
 #### Zoom To Block
@@ -51,11 +72,13 @@ const config = {
 seatmapRef.current.zoomManager.zoomToBlock(blockId)
 ```
 
+
 #### Get Selected Seats
 ```js
 const selectedSeats = seatmapRef.current.getSelectedSeats()
 
 ```
+
 
 #### Seat Click Handler
 ```js
@@ -67,3 +90,43 @@ const seatClick = (seat) => {
     }
 }
 ```
+
+#### Component Example
+```js
+import React from 'react';
+import SeatmapCanvas from '@alisaitteke/seatmap-canvas';
+
+const MySeatmap = () => {
+    const config = {
+        // Your CONFIG here
+    };
+
+    let blocks = [
+        // Your BLOCK_DATA here
+    ]
+
+    const seatClick = (seat) => {
+        if (!seat.isSelected() && seat.item.salable === true) {
+            seat.select()   // Set select seat
+        } else {
+            seat.unSelect() // Unselect seat
+        }
+    }
+
+    return (
+        <Seatmap
+            className="w-full flex-1 h-full"
+            ref={seatmapRef}
+            seatClick={seatClick}
+            blocks={blocks}
+            config={config}>
+        </Seatmap>
+    );
+};
+
+export default MySeatmap;
+
+```
+
+## Contributors
+Ali Sait TEKE <alisaitt@gmail.com>
