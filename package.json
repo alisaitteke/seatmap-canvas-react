@@ -18,8 +18,7 @@
   "author": "Ali Sait Teke <alisaitteke@gmail.com>",
   "license": "ISC",
   "dependencies": {
-    "@alisaitteke/seatmap-canvas": "latest",
-    "prop-types": "^15.8.1"
+    "@alisaitteke/seatmap-canvas": "latest"
   },
   "peerDependencies": {
     "react": "^18.2.0",
@@ -41,6 +40,7 @@
     "node": ">=18.0.0"
   },
   "devDependencies": {
+    "prop-types": "^15.8.1",
     "@rollup/plugin-commonjs": "^25.0.7",
     "@rollup/plugin-node-resolve": "^15.2.3",
     "@rollup/plugin-typescript": "^11.1.5",
