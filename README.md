@@ -98,11 +98,62 @@ import SeatmapCanvas from '@alisaitteke/seatmap-canvas';
 
 const MySeatmap = () => {
     const config = {
-        // Your CONFIG here
-    };
+        legend: true,
+        style: {
+            seat: {
+                hover: '#8fe100',
+                color: '#f0f7fa',
+                selected: '#8fe100',
+                check_icon_color: '#fff',
+                not_salable: '#0088d3',
+                focus: '#8fe100',
+            },
+            legend: {
+                font_color: '#3b3b3b',
+                show: false
+            },
+            block: {
+                title_color: '#fff'
+            }
+        }
+    }
 
     let blocks = [
-        // Your BLOCK_DATA here
+        {
+          "id": 1,
+          "title": "Test Block 1",
+          "color": "#2c2828",
+          "labels": [
+            {
+              "title": "A",
+              "x": -30,
+              "y": 0
+            },
+            {
+              "title": "B",
+              "x": 120,
+              "y": 30
+            }
+          ],
+          "seats": [
+            {
+              "id": 1,
+              "x": 0,
+              "y": 0,
+              "salable": true,
+              "note": "note test",
+              "title": "49"
+            },
+            {
+              "id": 2,
+              "x": 30,
+              "y": 0,
+              "salable": true,
+              "note": "note test",
+              "title": "47"
+            }
+          ]
+        }
     ]
 
     const seatClick = (seat) => {
