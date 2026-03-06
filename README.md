@@ -1,5 +1,19 @@
 [![LIVE DEMO](https://raw.githubusercontent.com/alisaitteke/seatmap-canvas-react/master/assets/banner_ui.png?raw=true)](https://alisaitteke.github.io/seatmap-canvas)
 
+# ⚠️ DEPRECATED
+
+**This package is deprecated and no longer maintained.**
+
+Please use the main package [@alisaitteke/seatmap-canvas](https://www.npmjs.com/package/@alisaitteke/seatmap-canvas) instead. The core package now supports React and all other frameworks (Vue, Angular, Vanilla JS, etc.) with the same unified API.
+
+```bash
+npm install @alisaitteke/seatmap-canvas
+# or
+yarn add @alisaitteke/seatmap-canvas
+```
+
+---
+
 # Seatmap Canvas - React
 This is the ReactJS implementation of the original [seatmap-canvas](https://alisaitteke.github.io/seatmap-canvas/) library, an open-source tool designed for interactive seat selection in various environments like stadiums, theaters, and event venues. Leveraging the capabilities of React and d3.js, this library provides a flexible and efficient solution for managing seat arrangements.
 
